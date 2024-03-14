@@ -25,5 +25,5 @@ The aim of the task is to create a dashboard using Microsoft Power BI tool that 
 
 * **resolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "Y")**
 
-***unresolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "N")**
+* **unresolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "N")**
 
