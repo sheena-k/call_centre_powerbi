@@ -9,21 +9,21 @@ The aim of the task is to create a dashboard using Microsoft Power BI tool that 
 ---
 #### Measures used in analysis
 ---
-***Total Calls = DISTINCTCOUNT(call_centre[Call Id])**
+* **Total Calls = DISTINCTCOUNT(call_centre[Call Id])**
 
-***Answered Calls = CALCULATE(COUNTROWS(call_centre), call_centre[Answered (Y/N)] = "Y")**
+* **Answered Calls = CALCULATE(COUNTROWS(call_centre), call_centre[Answered (Y/N)] = "Y")**
 
-***Unanswered Calls = CALCULATE(COUNTROWS(call_centre), call_centre[Answered (Y/N)] = "N")**
+* **Unanswered Calls = CALCULATE(COUNTROWS(call_centre), call_centre[Answered (Y/N)] = "N")**
 
-***Avg Speed of Answers = AVERAGE(call_centre[Speed of answer in seconds])**
+* **Avg Speed of Answers = AVERAGE(call_centre[Speed of answer in seconds])**
 
-***Avg statisfaction rating = AVERAGE(call_centre[Satisfaction rating])**
+* **Avg statisfaction rating = AVERAGE(call_centre[Satisfaction rating])**
 
-***Percentage Unresolved = [unresolved calls]/[Total Calls]**
+* **Percentage Unresolved = [unresolved calls]/[Total Calls]**
 
-***Percentage resolved = [resolved calls]/[Total Calls]**
+* **Percentage resolved = [resolved calls]/[Total Calls]**
 
-***resolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "Y")**
+* **resolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "Y")**
 
 ***unresolved calls = CALCULATE(COUNTROWS(call_centre), call_centre[Resolved]= "N")**
 
